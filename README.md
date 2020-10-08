@@ -24,6 +24,10 @@ yarn build
 yarn lint
 ```
 
-### Customize configuration
+### Screenshot Web View
 
-See [Configuration Reference](https://cli.vuejs.org/config/).
+![](src/assets/sc-web.jpg)
+
+### Screenshot Mobile View
+
+![](src/assets/sc-mobile.png)
