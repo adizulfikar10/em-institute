@@ -1,0 +1,205 @@
+* {
+  font-family: "roboto" !important;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
+h1 {
+  font-size: 48px !important;
+  letter-spacing: 0.05em;
+}
+
+h3 {
+  letter-spacing: 0.1em;
+}
+
+.app-margin {
+  margin-left: 10vw;
+  margin-right: 10vw;
+}
+
+.navbar {
+  padding-top: 15px;
+}
+
+.bg-banner {
+  padding-top: 40px;
+  padding-bottom: 40px;
+  width: 100vw;
+  height: 100vh;
+  background: url("../assets/attr/Group1.png");
+  background-repeat: no-repeat;
+  background-position: right top;
+
+  .banner-left {
+    padding-top: 20vh;
+  }
+
+  .banner-right {
+    padding-top: 10vh;
+  }
+}
+
+.bg-content-white {
+  padding-top: 40px;
+  padding-bottom: 40px;
+  min-height: 25vh;
+}
+
+.bg-content-grey {
+  background: #f4f4f4;
+  width: 100vw;
+  min-height: 4vh;
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
+.bg-content-line {
+  text-align: center;
+  padding-top: 20px;
+  min-height: 75vh;
+  background: url("../assets/attr/Rectangle9.png") no-repeat center center;
+  background-size: 100% 100%;
+}
+
+.bg-content-rect {
+  padding-top: 20px;
+  width: 100vw;
+  min-height: 40vh;
+  background: url("../assets/attr/Rectangle16.png") no-repeat center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.hooper-indicator.is-active {
+  background-color: #7a5fad !important;
+}
+
+.menu-show {
+  display: block;
+  animation: fadein 0.5s;
+
+  ul {
+    margin-top: 7px;
+    list-style: none;
+    float: left;
+  }
+
+  li {
+    float: left;
+  }
+}
+
+.menu-hide {
+  opacity: 0;
+  animation: fadeout 0.5s;
+
+  ul {
+    list-style: none;
+    float: left;
+  }
+
+  li {
+    float: left;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  html,
+  body {
+    width: 100%;
+  }
+
+  h1 {
+    font-size: 36px !important;
+    letter-spacing: 0em;
+  }
+
+  .bg-banner {
+    position: relative;
+    background-size: 50% 40%;
+    max-height: 79vh;
+
+    .banner-left {
+      width: 50%;
+      z-index: 2;
+      position: absolute;
+      padding-top: 0vh;
+    }
+
+    .banner-right {
+      left: 0px;
+      width: 71%;
+      position: absolute;
+
+      .v-image {
+        left: 32vw;
+        z-index: 0;
+      }
+    }
+  }
+
+  .bg-content-white {
+    min-height: 10vh !important;
+  }
+
+  .bg-content-rect {
+    min-height: 35vh !important;
+  }
+
+  .menu-show {
+    z-index: 10;
+    left: 0px;
+    top: 0px;
+    width: 100vw;
+    height: 100vh;
+    background: #fff;
+    position: absolute;
+    display: block;
+
+    ul {
+      width: 100%;
+      text-align: center;
+      margin-top: 20vh !important;
+    }
+
+    li {
+      margin-top: 25px;
+      color: #7a5fad;
+      float: none !important;
+    }
+  }
+
+  .menu-hide {
+    display: none;
+  }
+}
+
+// animation
+@keyframes fadein {
+  from {
+    transform: translate3d(-30%, 0, 0);
+    opacity: 0;
+  }
+  to {
+    transform: translate3d(0, 0, 0);
+    opacity: 0.8;
+  }
+}
+
+@keyframes fadeout {
+  from {
+    transform: translate3d(0, 0, 0);
+    opacity: 0.8;
+  }
+  to {
+    transform: translate3d(-30%, 0, 0);
+    opacity: 0;
+  }
+}
